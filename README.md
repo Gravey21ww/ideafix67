@@ -17,7 +17,7 @@
 
 - Docker Desktop с работающим Linux Engine.
 - Интернет для загрузки базового образа, Python-пакетов и Chromium.
-- Токен бота MAX.
+- Токен бота MAX. (в архиве имеется в .env)
 - API-ключ приложения Dify и настроенный опубликованный Chatflow.
 
 Зависимости из `requirements.txt`:
@@ -29,7 +29,7 @@
 | `playwright` | `1.64.1` | Рендеринг формул и графиков в PNG через Chromium |
 
 ## Сборка Docker-образа в Windows PowerShell
-
+Распакуйте MAX_Bot.rar
 Откройте PowerShell в папке `MAX_Bot`. Создайте локальный файл настроек и заполните в нём `MAX_BOT_TOKEN` и `DIFY_API_KEY` (он вставлен уже тестовый):
 Соберите образ:
 docker build -t max-ege-bot:latest .
